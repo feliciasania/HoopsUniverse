@@ -1,0 +1,1194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+  }
+
+  /* -------------------  header  -------------------*/
+  header {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+  }
+  
+  .isiHeader {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  }
+  .isiHeader pr{
+    color: transparent;
+  }
+  
+  @media screen and (max-width: 620px) {
+    #hilang {
+      color: transparent;
+      font-size: 1px;
+    }
+  }
+  
+  .header2 {
+    /* line header */
+    width: 100%;
+    height: 3px;
+    background-color: rgb(230, 230, 230);
+  }
+  
+  .nav1 {
+    width: 100%;
+    height: 160px;
+    background-color: transparent;
+    font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+  }
+
+  #logo {
+    width: 200px;
+    height: 150px;
+    margin: auto;
+  }
+
+  .nav2 {
+    display: flex;
+    justify-content: center;
+    font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropbtn img{
+    width: 10px;
+    height: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .topnav a:hover,
+  .dropdown:hover .dropbtn {
+    background-color:rgba(248, 216, 128, 0.315);
+    color: black;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  @media screen and (max-width: 670px) {
+    .nav2 {
+      display: inline-block;
+      width: 100%;
+    }
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav a.icon img{
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 670px) {
+    .topnav.responsivenav {
+      position: relative;
+    }
+    .topnav.responsivenav .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsivenav a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsivenav .dropdown {
+      float: none;
+    }
+    .topnav.responsivenav .dropdown-content {
+      position: relative;
+    }
+    .topnav.responsivenav .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  /* -------------------  footer  -------------------*/
+  
+  .container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer {
+    background-color: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  }
+  
+  .footer p{
+    color: #8a8a8a;
+  }
+  
+  .footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col-1, .footer-col-2, .footer-col-3{
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col-1 img{
+    width: 200px;
+    height: 150px;
+  }
+  
+  .footer-col-2, .footer-col-3{
+    flex-basis: 12%;
+    text-align: center;
+  }
+  
+  .footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+  }
+  .footer a{
+      color:inherit;
+      text-decoration: none;
+  }
+  
+  .copyright{
+    text-align: center;
+  }
+  @media screen and (max-width: 800px) {
+    .container .row{
+      width: auto;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  }
+
+  /* -------------------  slideshow  ------------------- */
+  
+  #slider {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  #slider .slides {
+    display: block;
+    width: 600vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 100vw;
+    height: auto;
+  }
+  #slider img{
+    width: 100vw;
+  }
+  
+  /* -------------------  clothing category title  ------------------- */
+  
+  .clothingcategory{
+    width: 100%;
+    height: 10%;
+    background-color: transparant;
+  }
+  .clothingcategory h1 {
+    font-size:25px;
+    font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  .category{
+    padding-right: 20px;
+    padding-left: 20px ;
+  }
+  
+  /* -------------------  category  ------------------- */
+  
+  div.gallery {
+    border: 1px;
+  }
+  
+  div.gallery:hover {
+    border: 1px;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .gallery img {
+    width: 500px;
+    height: 610px;
+    position: relative;
+    border-radius: 10%;
+  }
+  
+  .responsivecategory {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    padding-bottom: 50px;
+  }
+  
+  @media only screen and (max-width: 620px) {
+    .responsivecategory {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+  /* -------------------  category hover  -------------------*/
+  
+  .gallery h2:hover, .gallery :hover img{
+    color: black;
+    opacity: 0.5;
+    font-family:sans-serif;
+    transition: 1s;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  }
+  .gallery :hover h2{
+    opacity: 1;
+    font-family:sans-serif;
+    color: black;
+    transition: 1s;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  }
+  .gallery h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  }
+  .album h2{
+    position: absolute;
+    color: black;
+  }
+  .gallery {
+    position: relative;
+  }
+  .category .gallery h2{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* -------------------  new arrival title  ------------------- */
+  
+  .newarrival {
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+  .newarrival h1 {
+    font-size: 25px;
+    font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  }
+  .title2 {
+    text-align: center;
+  }
+  
+  /* -------------------  best seller title  -------------------*/
+  
+  .bestseller {
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: transparant;
+  }
+  .bestseller h1 {
+    font-size: 25px;
+    font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  }
+  
+  .title3 {
+    text-align: center;
+  }
+  
+  /* -------------------  brands  -------------------*/
+  .brands{
+    margin: 100px auto;
+  }
+  .col-1{
+    width: 160px;
+  }
+  .col-1 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+  }
+  .col-1 img:hover{
+    filter: grayscale(0);
+  }
+  .small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  /* -------------------  account  -------------------*/
+
+  .navbar{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    background-color: transparent;
+    letter-spacing: 4px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+  .btnhome{
+      width: 100px;
+      height: 40px;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      transition: ease-out 0.3s;
+      font-size: 1rem;
+      position: relative;
+      background-color: transparent;
+      box-shadow: inset 0 0 0 0 #F3C693;
+  }
+  .btnhome:hover{
+      box-shadow: inset 300px 0 0 0 #F3C693;
+      color: black;
+  }
+  .bodyaccount{
+    height: 100vh;
+    background-image: url(../assets/basketball\ background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  .bodyaccount p {
+    color: white;
+    font-family: 'Kiwi Maru', sans-serif;
+    padding-top: 10px;
+  }
+  .containeraccount1 h1 {
+    text-align: center;
+    padding-left: 12vh;
+    padding-bottom: 20px;
+  }
+  .containeraccount2 h1 {
+    text-align: center;
+    padding-left: 8vh;
+    padding-bottom: 20px;
+  }
+
+  .bodyaccount a {
+    color: white;
+    font-family: 'Kiwi Maru', sans-serif;
+  }
+  .containeraccount{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      padding: 20px 25px;
+      width: 330px;
+      font-family: 'Kiwi Maru', sans-serif;
+      background-color: rgba(0,0,0,.7);
+  }
+  .containeraccount h1{
+      text-align: left;
+      color: #fafafa;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      border-bottom: 4px solid #F3C693;
+  }
+  .containeraccount label{
+      text-align: left;
+      color: white;
+  }
+  .containeraccount form input{
+      width: calc(100% - 20px);
+      padding: 8px 10px;
+      margin-bottom: 15px;
+      border: none;
+      background-color: transparent;
+      border-bottom: 2px solid #F3C693;
+      color: #fff;
+      font-size: 20px;
+  }
+  .containeraccount button{
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+  .containeraccount form button{
+      width: 100%;
+      height: 40px;
+      padding: 5px 0;
+      border: none;
+      background-color:#F3C693;
+      font-size: 18px;
+      font-family: 'Kiwi Maru', sans-serif;
+      color: black;
+      border-radius: 20px;
+  }
+
+  .bodyaccount form input{
+    font-size: 15px;
+  }
+
+/* ----------------- product -------------------- */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 100px 50px;
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.product {
+  height: 48rem;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product .icons img, .product .icons2 img{
+  width: 120px;
+  height: 120px;
+}
+
+.product2 a {
+  color: black;
+  text-decoration: none;
+}
+
+.product1 {
+  position: relative;
+  height: 35rem;
+  background-color:#f6f2f1;
+}
+
+.product1 img {
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.product2 {
+  padding: 10px 10px 0 10px;
+}
+
+.product2 h3 {
+  font-size: 22px;
+  font-family:"Kiwi Maru", Arial, Helvetica, sans-serif;
+}
+
+.product2 .price {
+  padding-top: 5px;
+  color: orangered;
+  font-size: 20px;
+  font-family:"Kiwi Maru", Arial, Helvetica, sans-serif;
+}
+.product:hover .product1 .icons2 img{
+  opacity: 1;
+}
+.product:hover .product1 .icons img{
+  opacity: 1;
+}
+.product:hover .product1 img{
+  z-index: 1;
+  opacity: 0.5;
+  border-radius: 10px 10px 0 0;
+}
+.product1 .icons2 {
+  left: 30%;
+  top: 53%;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.product1 .icons {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  z-index: 2;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.product:hover .icons, .product:hover .icons2 {
+  opacity: 1;
+  transform: translate(0, -50%) scale(1);
+}
+
+.htmlproduct {
+  font-size: 62.5%;
+}
+
+.bodyproduct {
+  font-size: 1.8rem;
+}
+
+/* ---------------------  page  -------------------- */
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.page span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: black;
+  font-size: 14px;
+  border: 1px solid rgb(78, 78, 78);
+  cursor: pointer;
+}
+
+.page span:hover {
+  background-color: rgb(78, 78, 78);
+  color: white;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+/* ------------------  details  --------------------- */
+
+.detailing {
+  margin-top: 30px;
+}
+.detailing a{
+  text-decoration: none;
+}
+.more {
+  color: black;
+  text-decoration: none;
+}
+.detailing .details {
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr;
+  gap: 100px;
+}
+.detailing .bagian1 {
+  display: flex;
+}
+.detailing .bagian1 .main {
+  background-color: #f6f2f1;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  height: 450px;
+  padding: 30px;
+}
+.detailing .bagian1 .main img {
+  height: 100%;
+  width: 350px;
+  justify-content: center;
+}
+.detailing .mainChild {
+  display: flex;
+  flex-direction:column ;
+  gap: 16px;
+  width: 100%;
+}
+.detailing .child {
+  height: 100px;
+  background-color: #f6f2f1;
+  text-align: center;
+}
+.detailing .child img {
+  height: 100%;
+}
+.detailing .bagian2 h1 {
+  font-size: 43px;
+  margin-bottom: 10px;
+  color: orangered;
+}
+.detailing .bagian2 .price {
+  font-size: 20px;
+  color: orangered;
+  margin-bottom: 20px;
+}
+.detailing .bagian2 select {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+.detailing form {
+  margin-bottom: 20px;
+}
+.detailing .form {
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+.detailing .form .btnBuy {
+  margin-top: 100px;
+  border: 3px solid orangered;
+  padding: 8px 60px;
+  color: black;
+  border-radius: 30px;
+}
+.detailing .form .btnBuy:hover {
+  background: orangered;
+  color: white;
+}
+.detailing h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.bagian2 span img {
+  width: 10px;
+  height: 10px;
+  padding-bottom: 1px;
+}
+
+@media only screen and (max-width: 996px) {
+  .detailing .bagian1 {
+    height: 450px;
+  }
+  .detailing .details {
+    gap: 30px;
+  }
+  .detailing .mainChild {
+    gap: 17px;
+    justify-content: center;
+  }
+  .detailing .child {
+    background-color: #f6f2f1;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .detailing .details {
+    grid-template-columns: 1fr;
+  }
+  .detailing .bagian2 {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .detailing .form .btnBuy {
+    padding: 8px 35vw;
+  }
+  .detailing .bagian1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+  }
+  .detailing .bagian1 .main{
+    text-align: center;
+  }
+  .detailing .mainChild {
+    flex-direction: row;
+    gap: 2%;
+  }
+  .detailing .child {
+    width: 140px;
+    height: 100px;
+    justify-content: center;
+  }
+  .detailings .bagian3{
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .detailing .bagian2 {
+    margin-top: 80px;
+  }
+  .detailing .bagian1 .main img {
+    height: 100%;
+    width: 300px;
+  }
+  .detailing .details {
+    gap: 40px;
+  }
+  .detailing .child {
+    width: 90px;
+    height: 80px;
+    justify-content: center;
+  }
+  .detailing .form .btnBuy {
+    padding: 8px 33vw;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .detailing .bagian1 .main img {
+    width: 250px;
+  }
+  .detailing .bagian1 .main{
+    padding-left: 40px;
+  }
+  .detailing .form .btnBuy {
+    padding: 8px 30vw;
+  }
+}
+@media only screen and (max-width: 385px) and (min-width: 347px){
+  .detailing .form .btnBuy {
+    padding: 8px 28vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .detailing .bagian2 {
+    margin-top: 70px;
+  }
+  .detailing .child {
+    width: 60px;
+    height: 60px;
+  }
+  .detailing .bagian1 .main{
+    padding-left: 0px;
+  }
+}
+.htmldetails {
+  font-size: 62.5%;
+}
+
+.bodydetails {
+  font-family: "Kiwi Maru", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: white;
+  color:black;
+  font-weight: 400;
+}
+.details2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.details2 h1 {
+  color: orangered;
+}
+@media only screen and (max-width: 1200px) {
+  .details2 {
+    padding: 0 3rem;
+  }
+}
+.bagian3 {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 70px;
+  background-color: transparent;
+}
+@media only screen and (max-width: 800px) and (min-width: 700px){
+  .bagian3 {
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 70px;
+    background-color: transparent;
+  }
+}
+.contentdetails {
+  padding-bottom: 70px;
+}
+
+/* ------------------  faq  --------------------- */
+ 
+.bodyfaq .isiHeader{
+  font-size: 19px;
+}
+.bodyfaq{
+  font-family: sans-serif;
+}
+
+.container-fluid{
+  width : 90%;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.container-fluid h2{
+  color: rgba(255, 104, 3, 0.89);
+  position: relative;
+  width: auto;
+  text-align: center;    
+}
+
+.accordion {
+  width: 80%;
+  padding: 15px 50px;
+  border: 3px solid #cc7351;
+  cursor: pointer;
+  display: flex;
+  margin: 15px 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.accordion img{
+  width: 20px;
+  height: 20px;
+}
+
+.question{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion h5{
+  font-size: 22px;
+  margin: 0;
+  padding: 3px 0 0 0;
+  font-weight: normal;
+  color: #cc7351;  
+  transition: all .5s ease-in;
+
+}
+.active2 img{
+  transform: rotate(180deg);
+}
+
+.active2 h5{
+  color: #cc7351;
+}
+.answer{
+  padding: 0 15px;
+  border-left: 1px solid #ff7b54;
+  background-color: rgba(207, 207, 207, 0.452);
+  margin-left: 25px;
+  font-size: 17px;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: all .5s ease-in;
+  width: 80%;
+} 
+
+/* ------------------  purchase product  --------------------- */
+
+.group {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.group .textfield {
+	border: 2px solid rgba(83, 82, 82, 0.4);
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.group .textfield:focus {
+	outline: 0;
+	border-color: orangered;
+}
+
+.group.success .textfield {
+	border-color: #2ecc71;
+}
+
+.group.error .textfield {
+	border-color: #e74c3c;
+}
+
+.group small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.group.error small {
+	visibility: visible;
+}
+
+.form button {
+	background-color: orangered;
+	border: 2px solid orange;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+  margin-left: auto;
+	width: 170px;
+  cursor: pointer;
+}
+
+#temp {
+  font-size: 0.1px;
+}
+
+.checkouthtml div{
+	font: inherit;
+	box-sizing: border-box;
+} 
+
+.checkouthtml input{
+	outline: none;
+	box-sizing: border-box;
+}
+.checkoutbody {
+	font-family:"Kiwi Maru", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.checkouthtml .footer{
+  font-size: 14px;
+}
+.checkouthtml img{
+	max-width: 100%;
+}
+             
+.contentpurchase{
+	width: 90%;
+	margin: 0 auto;
+}
+.checkout{
+	display: inline-block;
+	width: 100%;
+	padding: 45px 0;
+}
+.contentpurchase h2{
+	font-size: 22px;
+	font-weight: 700;
+	color: #222;
+	border-bottom: 1px solid;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	text-transform: uppercase; 
+}
+.checkoutContent{
+	width: 65%;
+	float: left;
+	border-right: 1px solid #c5c5c5;
+	padding-right: 25px;
+}
+.mainGroup{
+	width: 100%;
+	padding: 15px;
+	display: inline-block;
+}
+.mainGroup h4{
+	font-size: 18px;
+	font-weight: 700;
+	border-bottom: 1px solid;
+	color: orangered;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+}
+
+.mainGroup .address{
+	border: 2px solid rgba(83, 82, 82, 0.4);
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.mainGroup .notes{
+	border: 2px solid rgba(83, 82, 82, 0.4);
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+.mainGroup .textfield:focus, .mainGroup label:hover{
+	border-color: orangered;
+}
+.group-s label {
+	width: 100%;
+	float: left;
+	border:2px solid #d0d0d0;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	padding: 10px;
+	font-size: 15px;
+	background-color: white;
+}
+.mainGroup2{
+	width: 32%;
+	float: right;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+.mainGroup2 h3{
+	font-size: 18px;
+	padding: 15px 0;
+	line-height: 22px;
+}
+.mainGroup2 p{
+	padding: 15px 10px;
+	background-color: #00000010;
+	font-size: 18px;
+	border-bottom: 1px solid #00000020;
+}
+.mainGroup2 p span{
+	float: right;
+}
+.mainGroup2 img{
+  width: 100%;
+}
+
+@media only screen and (max-width: 950px){
+  .mainGroup2 p, .mainGroup2 h3{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 850px){
+  .mainGroup2 p, .mainGroup2 h3{
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 700px){
+  .mainGroup2 p, .mainGroup2 h3{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 650px){
+  .mainGroup2 p, .mainGroup2 h3{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .mainGroup2 p, .mainGroup2 h3{
+    font-size: 9px;
+  }
+}

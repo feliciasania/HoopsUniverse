@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="checkouthtml">
+<head>
+	<title>Purchase Product - Hoops Universe</title>
+	<link rel="shortcut icon" href="../assets/logo.png">
+	<link rel="stylesheet" href="../css/style.css">
+	<script defer src="../js/checkout.js"></script>
+</head>
+<body class="checkoutbody">
+    <video src="../assets/background new.mp4" muted loop autoplay></video>
+    <!-- ------------------ header ------------------ -->
+  <header>
+    <div class="isiHeader">
+      <p id="hilang">Currency: IDR</p>
+      <p>Welcome to the website!</p>
+      <pr id="hilang">Log in/Resigter</pr>
+    </div>
+  </header>
+  <div class="header2"></div>
+  <div class="nav">
+    <div class="nav1">
+        <img src="../assets/logo.png" alt="logo" id="logo">
+    </div>
+    <div class="nav2">
+        <div class="topnav" id="myTopnav">
+            <a href="../home.html" class="active">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">Shoes 
+                <img src="../assets/down-arrow.png" alt="">
+              </button>
+              <div class="dropdown-content">
+                <a href="./adidas.html">Adidas</a>
+                <a href="./jordan.html">Jordan</a>
+                <a href="./nike.html">Nike</a>
+                <a href="./puma.html">Puma</a>
+              </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Accessories 
+                  <img src="../assets/down-arrow.png" alt="">
+                </button>
+                <div class="dropdown-content">
+                  <a href="./bags.html">Bags</a>
+                  <a href="./balls.html">Balls</a>
+                  <a href="./sleeve.html">Sleeve</a>
+                  <a href="./socks.html">Socks</a>
+                </div>
+              </div>
+            <a href="./faq.html">FAQ</a>
+            <a href="./checkout.html">Purchase Product</a>
+            <a href="./account.html">Login</a>
+            <a href="javascript:void(0);" class="icon" onclick="Header()">
+              <img src="../assets/list.png" alt="">
+            </a>
+          </div>
+          <script type="text/javascript" src="../js/script.js"></script>
+      </div>
+      <br><br>
+  </div>
+    <!-- ------------------ content ------------------ -->
+<div class="contentpurchase">
+	<div class="checkout">
+		<h2>Purchase Form</h2>
+		<div class="checkoutContent">
+			<form id="form" class="form" action="" method="post">
+			<div class="mainGroup">
+				<h4>Personal Detail</h4>
+				<div class="group">
+					<label for="username" class="kiri">Username</label>
+					<input type="text" placeholder="Your Username" id="username" name="username" class="textfield"/>
+					<small>Error message</small>
+				</div>
+				<div class="group">
+					<label for="phonenumber" class="kiri">Phone Number</label>
+					<input type="text" placeholder="+62" id="phonenumber" name="phonenumber" class="textfield"/>
+					<small>Error message</small>
+				</div>
+				<div class="group">
+					<label for="email" class="kiri">Email</label>
+					<input type="text" placeholder="Your Email" id="email" name="email" class="textfield"/>
+					<small>Error message</small>
+				</div>
+				<div class="group group-s">
+					<p>Gender</p>
+					<label for="male">
+						<input type="radio" id="male" value="male" name="gender" />
+						Male
+					</label>
+					<label for="female">
+						<input type="radio" id="female" value="female" name="gender" />
+						Female
+					</label>
+					<small>Error message</small>
+					<p id="temp">.</p>
+				</div>
+				<div class="group">
+					<label for="dob" class="kiri">Date Of Birth</label>
+					<input type="date" id="dob" name="dob" class="textfield">
+					<small>Error message</small>
+				</div>						
+			</div>
+
+			<div class="mainGroup">
+				<h4>Address Detail</h4>
+				<div class="group">
+					<label for="district" class="kiri">Province</label>
+					<select id="district" name="district" class="textfield">
+						<option value="">Choose Province</option>
+						<option value="aceh">Aceh</option>
+						<option value="sumaterautara">North Sumatera</option>
+						<option value="sumaterabarat">West Sumatera</option>
+						<option value="riau">Riau</option>
+						<option value="jambi">Jambi</option>
+						<option value="sumateraselatan">South Sumatera</option>
+						<option value="lampung">Lampung</option>
+						<option value="jakarta">DKI Jakarta</option>
+						<option value="jawabarat">West Java</option>
+						<option value="jawatengah">Center Java</option>
+						<option value="jawatimur">East Java</option>
+						<option value="bali">Bali</option>
+						<option value="NTB">West Nusa Tenggara</option>
+						<option value="NTT">East Nusa Tenggara</option>
+						<option value="westkalimantan">West Kalimantan</option>
+						<option value="eastkalimantan">East Kalimantan</option>
+						<option value="southkalimantan">South Kalimantan</option>
+						<option value="northkalimantan">North Kalimantan</option>
+						<option value="centerkalimantan">Center Kalimantan</option>
+						<option value="westsulawesi">West Sulawesi</option>
+						<option value="eastsulawesi">East Sulawesi</option>
+						<option value="southsulawesi">South Sulawesi</option>
+						<option value="northsulawesi">North Sulawesi</option>
+						<option value="maluku">Maluku</option>
+						<option value="papua">Papua</option>
+					</select>
+					<small>Error message</small>
+				</div>
+				<div class="group">
+					<label for="address" class="kiri">Address</label>
+					<textarea name="address" id="address" rows="5" placeholder="Address" class="address"></textarea>
+					<small>Error message</small>
+				</div>
+				<div class="group">
+					<label for="postalcode" class="kiri">Postal Code</label>
+					<input type="text" placeholder="Postal Code" id="postalcode" name="postalcode" class="textfield"/>
+					<small>Error message</small>
+				</div>
+			</div>
+			<div class="mainGroup group-s">
+				<h4>Delivery</h4>
+				<label for="J&T">
+					<input type="radio" name="kurir" value="J&T" id="J&T">
+					J&T
+				</label>
+				<label for="JNE">
+					<input type="radio" name="kurir" value="JNE" id="JNE">
+					JNE
+				</label>
+				<label for="SiCepat">
+					<input type="radio" name="kurir" value="SiCepat" id="SiCepat">
+					SiCepat
+				</label>
+				<label for="TiKi">
+					<input type="radio" name="kurir" value="TiKi" id="TiKi">
+					TiKi
+				</label>
+				<label for="NinjaExpress">
+					<input type="radio" name="kurir" value="NinjaExpress" id="NinjaExpress">
+					Ninja Express
+				</label>
+			</div>
+			<div class="mainGroup group-s">
+				<h4>Payment Method</h4>
+				<label for="Visa">
+					<input type="radio" name="payment" value="Visa" id="Visa">
+					Visa
+				</label>
+				<label for="Mandiri">
+					<input type="radio" name="payment" value="Mandiri" id="Mandiri">
+					Mandiri
+				</label>
+				<label for="OVO">
+					<input type="radio" name="payment" value="OVO" id="OVO">
+					OVO
+				</label>
+				<label for="PayPal">
+					<input type="radio" name="payment" value="PayPal" id="PayPal">
+					PayPal
+				</label>
+			</div>
+			<div class="mainGroup">
+				<h4>Notes</h4>
+				<div class="group">
+					<textarea name="notes" id="notes" rows="3" placeholder="Notes" class="notes"></textarea>
+					<small>Error message</small>
+				</div>
+			</div>
+			<button>Submit</button>
+			</form>
+		</div>
+		<div class="mainGroup2">
+			<img src="../assets_2/jordan_2.png">
+			<h3>Jordan Why Not ZER0.4 PF</h3>
+			<p>Quantity : <span>1</span></p>
+			<p>Price : <span>IDR 1.979.000</span></p>
+			<p>Order Total : <span>IDR 1.979.000</span></p>
+		</div>		
+	</div>
+</div>
+<!-- ------------------ footer ------------------ -->
+<div class="footer"> 
+	<div class="container">
+	  <div class="row">
+		<div class="footer-col-1">
+		  <img src="../assets/logo.png" alt="">
+		</div>
+		<div class="footer-col-2">
+		  <h3>Contact</h3>
+		  <div>Jakarta,JKT 1023,IND</div>
+		  <div>hoopsuniverse@example.com</div>
+		  <div>+021 1234567</div>
+		  <div>+021 2345678</div>
+		</div>
+		<div class="footer-col-3">
+		  <h3>Follow Us</h3>
+		  <div><a href="https://www.facebook.com/HOOPSnyaINDONESIA/">Facebook</a></div>
+		  <div><a href="https://twitter.com/hoopsindo">Twitter</a></div>
+		  <div><a href="https://www.instagram.com/hoops.indonesia/?hl=id">Instagram</a></div>
+		  <div><a href="https://www.youtube.com/channel/UCvT_n77D_IgTz1vH0ILxpLg">Youtube</a></div>
+		</div>
+	  </div>
+	  <hr>
+	  <p class="copyright">Copyright 2021</p>
+	</div>
+  </div>
+</body>
+</html>
